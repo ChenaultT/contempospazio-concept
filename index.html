@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Contempo Spazio | Custom Kitchens, Bathrooms & Remodeling in Orlando, FL (Concept)</title>
-<meta name="description" content="Concept redesign. Contempo Spazio designs, fabricates and builds modern kitchens, bathrooms, closets and entertainment centers, plus new construction and remodeling for homes and businesses in Orlando, FL.">
+<title>Contempo Spazio | Custom Kitchens, Closets & Remodeling in Orlando, FL (Concept)</title>
+<meta name="description" content="Concept redesign. Contempo Spazio designs and builds modern kitchens, bathrooms, closets and TV accent walls, plus new construction and remodeling for homes and businesses in Orlando, FL.">
 <style>
 @font-face{font-family:"Instrument Serif";src:url(assets/fonts/InstrumentSerif-Regular.ttf) format("truetype");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"Instrument Serif";src:url(assets/fonts/InstrumentSerif-Italic.ttf) format("truetype");font-weight:400;font-style:italic;font-display:swap}
@@ -13,221 +13,239 @@
 @font-face{font-family:"Plex Mono";src:url(assets/fonts/IBMPlexMono-Regular.ttf) format("truetype");font-weight:400;font-display:swap}
 @font-face{font-family:"Plex Mono";src:url(assets/fonts/IBMPlexMono-Medium.ttf) format("truetype");font-weight:500;font-display:swap}
 :root{
-  --paper:#F4F2EF; --paper-2:#EAE6E1; --ink:#151314; --ink-2:#4A4546; --stone:#978F90; --line:rgba(21,19,20,.14);
-  --red:#C80A0A; --red-hover:#A30808; --dark:#1A1718;
+  --bg:#0E0D0C; --bg-2:#161412; --card:#1B1815; --text:#F2EDE6; --muted:#ABA298; --line:rgba(242,237,230,.14);
+  --brass:#CDA672; --red:#D10C0C; --red-hover:#B00909; --stone:#978F90;
   --serif:"Instrument Serif",Georgia,serif; --sans:"Inter Tight",system-ui,sans-serif; --mono:"Plex Mono",ui-monospace,monospace;
   --pad:clamp(20px,4.4vw,64px); --max:1320px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
 .mono{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
-.eyebrow{display:flex;gap:12px;align-items:center;color:var(--ink-2)}
+.eyebrow{display:flex;gap:12px;align-items:center;color:var(--brass)}
 .eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
 h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;line-height:.98}
 h2{font-size:clamp(40px,5.6vw,84px)}
-h2 em,h1 em{font-style:italic;color:var(--stone)}
+h1 em,h2 em{font-style:italic;color:var(--brass)}
 .btn{display:inline-flex;align-items:center;gap:12px;height:54px;padding:0 26px;border-radius:999px;font-weight:600;font-size:15px;letter-spacing:.01em;transition:background .2s,color .2s,border-color .2s;white-space:nowrap}
 .btn-primary{background:var(--red);color:#fff}
 .btn-primary:hover{background:var(--red-hover)}
-.btn-ghost{border:1px solid var(--ink);color:var(--ink)}
-.btn-ghost:hover{background:var(--ink);color:var(--paper)}
+.btn-ghost{border:1px solid rgba(242,237,230,.55);color:var(--text)}
+.btn-ghost:hover{background:var(--text);color:var(--bg)}
 .btn .arr{font-family:var(--mono);font-weight:500}
-.placeholder{display:inline-block;border:1.5px dashed var(--stone);border-radius:6px;padding:4px 10px;font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--ink-2);background:rgba(255,255,255,.5)}
+.placeholder{display:inline-block;border:1.5px dashed rgba(205,166,114,.7);border-radius:6px;padding:4px 10px;font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--muted)}
+.credit{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:var(--muted);margin-top:10px}
+.credit a{border-bottom:1px solid var(--line)}
 
-/* concept label */
-.concept-tag{position:fixed;left:16px;bottom:16px;z-index:60;background:var(--ink);color:#fff;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:9px 14px;border-radius:999px;box-shadow:0 6px 24px rgba(0,0,0,.18)}
-.concept-tag b{color:#ff8a8a;font-weight:500}
+.concept-tag{position:fixed;left:16px;bottom:16px;z-index:60;background:#F2EDE6;color:#0E0D0C;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:9px 14px;border-radius:999px;box-shadow:0 6px 24px rgba(0,0,0,.4)}
+.concept-tag b{color:var(--red);font-weight:500}
 
 /* header */
-.hdr{position:sticky;top:0;z-index:50;background:rgba(244,242,239,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.hdr{position:sticky;top:0;z-index:50;background:rgba(14,13,12,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .hdr .wrap{display:flex;align-items:center;gap:28px;height:78px}
 .brand{display:flex;align-items:center;gap:12px;flex:none}
 .brand img{height:42px;width:auto}
-.brand span{font-family:var(--sans);font-weight:700;font-size:15px;letter-spacing:.2em;text-transform:uppercase;line-height:1.05}
-.brand span small{display:block;font-weight:500;font-size:10.5px;letter-spacing:.24em;color:var(--red)}
-.nav{display:flex;gap:26px;margin-left:auto;font-size:14.5px;font-weight:500}
+.brand span{font-weight:700;font-size:15px;letter-spacing:.2em;text-transform:uppercase;line-height:1.05}
+.brand span small{display:block;font-weight:500;font-size:10.5px;letter-spacing:.24em;color:#ff5a5a}
+.nav{display:flex;gap:26px;margin-left:auto;font-size:14.5px;font-weight:500;color:#DDD6CC}
 .nav a{position:relative;padding:6px 0}
-.nav a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--ink);transition:width .25s}
+.nav a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--brass);transition:width .25s}
 .nav a:hover::after{width:100%}
-.hdr-phone{font-family:var(--mono);font-size:13px;letter-spacing:.04em;white-space:nowrap}
+.hdr-phone{font-family:var(--mono);font-size:13px;letter-spacing:.04em;white-space:nowrap;color:#DDD6CC}
 .hdr .btn{height:44px;padding:0 20px;font-size:14px}
-.menu-btn{display:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--ink);background:none;align-items:center;justify-content:center;flex-direction:column;gap:5px;cursor:pointer}
-.menu-btn i{display:block;width:16px;height:1.5px;background:var(--ink)}
+.menu-btn{display:none;width:44px;height:44px;border-radius:50%;border:1px solid rgba(242,237,230,.5);background:none;align-items:center;justify-content:center;flex-direction:column;gap:5px;cursor:pointer}
+.menu-btn i{display:block;width:16px;height:1.5px;background:var(--text)}
 .menu-panel{display:none}
 
 /* hero */
-.hero{padding:clamp(28px,4vw,56px) 0 0}
-.hero-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5.3fr);gap:clamp(28px,4vw,64px);align-items:stretch}
+.hero{position:relative;padding:clamp(28px,4vw,56px) 0 0}
+.hero::before{content:"";position:absolute;inset:0 0 auto 0;height:900px;background:radial-gradient(60% 60% at 75% 30%,rgba(205,166,114,.13),rgba(14,13,12,0) 70%);pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5.3fr);gap:clamp(28px,4vw,64px);align-items:stretch}
 .hero-copy{display:flex;flex-direction:column;justify-content:space-between;padding:clamp(8px,2vw,24px) 0 clamp(8px,2vw,28px)}
 .hero h1{font-size:clamp(56px,6.9vw,102px);margin:26px 0 28px}
 .hero h1 em{display:block}
-.hero p.lede{font-size:clamp(17px,1.35vw,20px);color:var(--ink-2);max-width:31em}
+.hero p.lede{font-size:clamp(17px,1.35vw,20px);color:#CFC7BC;max-width:31em}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
 .hero-meta{display:grid;grid-template-columns:repeat(3,auto);gap:22px;margin-top:48px;padding-top:22px;border-top:1px solid var(--line)}
-.hero-meta div{font-size:14px;color:var(--ink-2)}
-.hero-meta .mono{display:block;color:var(--ink);font-size:11px;margin-bottom:6px}
+.hero-meta div{font-size:14px;color:var(--muted)}
+.hero-meta .mono{display:block;color:var(--brass);font-size:11px;margin-bottom:6px}
 .hero-side{display:flex;flex-direction:column}
-.hero-media{flex:1;position:relative;border-radius:22px;overflow:hidden;min-height:620px;background:#ddd}
-.hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:42% 50%}
-.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,.55))}
-.hero-card{position:absolute;left:22px;right:22px;bottom:22px;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid rgba(255,255,255,.4);border-radius:14px;color:#fff;backdrop-filter:blur(8px);background:rgba(20,18,19,.28)}
+.hero-media{flex:1;position:relative;border-radius:22px;overflow:hidden;min-height:620px;background:#222}
+.hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,.6))}
+.hero-card{position:absolute;left:22px;right:22px;bottom:22px;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid rgba(255,255,255,.35);border-radius:14px;color:#fff;backdrop-filter:blur(8px);background:rgba(14,13,12,.35)}
 .hero-card div{padding:14px 16px;font-size:14px;line-height:1.35}
-.hero-card div+div{border-left:1px solid rgba(255,255,255,.3)}
+.hero-card div+div{border-left:1px solid rgba(255,255,255,.25)}
 .hero-card .mono{display:block;font-size:10.5px;opacity:.8;margin-bottom:4px}
-.credit{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:var(--ink-2);margin-top:10px;text-align:right}
+.hero-side .credit{text-align:right}
 
-/* proof strip */
+/* proof */
 .proof{margin-top:clamp(40px,5vw,72px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.proof ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr)}
+.proof ul{list-style:none;display:grid;grid-template-columns:1.25fr 1fr 1fr 1fr}
 .proof li{padding:26px 22px 26px 0;display:flex;gap:14px;align-items:flex-start;font-size:15px;font-weight:500;line-height:1.35}
 .proof li+li{padding-left:22px;border-left:1px solid var(--line)}
-.proof li span.n{font-family:var(--mono);font-size:11px;color:var(--red);padding-top:3px}
-.proof-note{padding:14px 0 0;display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:13px;color:var(--ink-2)}
+.proof li span.n{font-family:var(--mono);font-size:11px;color:var(--brass);padding-top:3px}
+.proof li.ig b{display:block;font-family:var(--serif);font-weight:400;font-size:34px;line-height:1;margin-bottom:6px}
+.proof li.ig small{display:block;color:var(--muted);font-weight:400;font-size:12.5px;margin-top:4px}
+.proof-note{padding:14px 0 0;display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:13px;color:var(--muted)}
 
-/* section scaffolding */
 section.sec{padding:clamp(80px,10vw,150px) 0 0}
 .sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:end;margin-bottom:clamp(36px,4.6vw,64px)}
-.sec-head p{color:var(--ink-2);max-width:34em;font-size:18px}
+.sec-head p{color:var(--muted);max-width:34em;font-size:18px}
 
 /* categories */
 .cats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.cat{position:relative;display:block;border-radius:18px;overflow:hidden;aspect-ratio:3/4.1;background:#ccc;color:#fff}
+.cat{position:relative;display:block;border-radius:18px;overflow:hidden;aspect-ratio:3/4.1;background:#222;color:#fff}
 .cat img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
 .cat:hover img{transform:scale(1.04)}
-.cat::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(0,0,0,.66))}
+.cat::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(0,0,0,.72))}
 .cat .lbl{position:absolute;left:20px;right:20px;bottom:18px;z-index:2}
-.cat .idx{position:absolute;top:16px;left:18px;z-index:2;font-family:var(--mono);font-size:11px;letter-spacing:.12em;background:rgba(255,255,255,.9);color:var(--ink);padding:5px 9px;border-radius:999px}
+.cat .idx{position:absolute;top:16px;left:18px;z-index:2;font-family:var(--mono);font-size:11px;letter-spacing:.12em;background:rgba(14,13,12,.7);color:var(--brass);padding:5px 9px;border-radius:999px;border:1px solid rgba(205,166,114,.4)}
 .cat h3{font-size:clamp(30px,2.6vw,40px);margin-bottom:6px}
-.cat p{font-size:13.5px;opacity:.92;line-height:1.4}
-
-/* options (products) */
-.options{margin-top:18px;display:grid;grid-template-columns:1.1fr repeat(4,1fr);border:1px solid var(--line);border-radius:18px;background:#fff}
+.cat p{font-size:13.5px;opacity:.9;line-height:1.4}
+.options{margin-top:18px;display:grid;grid-template-columns:1.1fr repeat(4,1fr);border:1px solid var(--line);border-radius:18px;background:var(--card)}
 .options>div{padding:24px 22px}
 .options>div+div{border-left:1px solid var(--line)}
-.options h4{font-family:var(--mono);font-weight:500;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px;color:var(--ink-2)}
+.options h4{font-family:var(--mono);font-weight:500;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px;color:var(--brass)}
 .options ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px}
-.options li{font-size:13.5px;border:1px solid var(--line);border-radius:999px;padding:4px 11px}
+.options li{font-size:13.5px;border:1px solid var(--line);border-radius:999px;padding:4px 11px;color:#DDD6CC}
 .options .intro p{font-family:var(--serif);font-size:27px;line-height:1.08}
-.options .intro a{display:inline-block;margin-top:14px;font-size:14px;font-weight:600;border-bottom:1px solid var(--ink)}
+.options .intro a{display:inline-block;margin-top:14px;font-size:14px;font-weight:600;border-bottom:1px solid var(--brass)}
+
+/* featured day/night */
+.feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,.9fr);gap:18px;align-items:stretch}
+.feature figure{position:relative;border-radius:18px;overflow:hidden;background:#222;aspect-ratio:3/4}
+.feature figure img{width:100%;height:100%;object-fit:cover}
+.feature figcaption{position:absolute;left:14px;top:14px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:rgba(14,13,12,.72);color:var(--brass);padding:6px 10px;border-radius:999px}
+.feature .story{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:clamp(24px,2.6vw,36px);display:flex;flex-direction:column;justify-content:space-between;gap:24px}
+.feature .story blockquote{font-family:var(--serif);font-size:clamp(28px,2.4vw,38px);line-height:1.08}
+.feature .story blockquote em{color:var(--brass)}
+.feature .story p{color:var(--muted);font-size:15.5px}
+.feature .story a.iglink{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--text);border-bottom:1px solid var(--brass);align-self:flex-start;padding-bottom:4px}
 
 /* services */
 .svc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(32px,5vw,80px);align-items:start}
 .svc-img{border-radius:18px;overflow:hidden;position:sticky;top:100px}
 .svc-img img{width:100%;aspect-ratio:4/4.4;object-fit:cover}
-.svc-list{border-top:1px solid var(--ink)}
+.svc-list{border-top:1px solid rgba(242,237,230,.6)}
 .svc-item{display:grid;grid-template-columns:70px 1fr;gap:10px;padding:30px 0;border-bottom:1px solid var(--line)}
-.svc-item .n{font-family:var(--mono);font-size:12px;color:var(--ink-2);padding-top:10px}
+.svc-item .n{font-family:var(--mono);font-size:12px;color:var(--brass);padding-top:10px}
 .svc-item h3{font-size:clamp(32px,3vw,44px);margin-bottom:10px}
-.svc-item p{color:var(--ink-2);margin-bottom:14px;max-width:34em}
+.svc-item p{color:var(--muted);margin-bottom:14px;max-width:34em}
 .tags{display:flex;flex-wrap:wrap;gap:6px}
-.tags span{font-size:13px;background:var(--paper-2);border-radius:999px;padding:4px 11px}
+.tags span{font-size:13px;background:rgba(242,237,230,.07);border:1px solid var(--line);border-radius:999px;padding:4px 11px;color:#DDD6CC}
 
 /* process */
-.process{background:var(--dark);color:#EDEAE6;margin-top:clamp(80px,10vw,150px);padding:clamp(80px,9vw,130px) 0}
-.process h2 em{color:#B9B1B2}
-.process .sec-head p{color:#B8B1AE}
-.process .eyebrow{color:#B8B1AE}
+.process{background:#F2EDE6;color:#151314;margin-top:clamp(80px,10vw,150px);padding:clamp(80px,9vw,130px) 0}
+.process h2 em{color:#8A6A3E}
+.process .sec-head p{color:#4A4546}
+.process .eyebrow{color:#8A6A3E}
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.step{border-top:1px solid rgba(255,255,255,.22);padding-top:22px;display:flex;flex-direction:column}
-.step .num{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:#ff7b7b}
-.step .ph{margin:20px 0 22px;border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:#333}
+.step{border-top:1px solid rgba(21,19,20,.2);padding-top:22px;display:flex;flex-direction:column}
+.step .num{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--red)}
+.step .ph{margin:20px 0 22px;border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:#ddd}
 .step .ph img{width:100%;height:100%;object-fit:cover}
 .step h3{font-size:36px;margin-bottom:10px}
-.step p{color:#BDB6B3;font-size:15.5px;margin-bottom:24px;flex:1}
-.step-cta{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#fff;display:inline-flex;gap:10px;align-items:center;padding-top:16px;border-top:1px dashed rgba(255,255,255,.22)}
-.step-cta:hover{color:#ff9d9d}
+.step p{color:#4A4546;font-size:15.5px;margin-bottom:24px;flex:1}
+.step-cta{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#151314;display:inline-flex;gap:10px;align-items:center;padding-top:16px;border-top:1px dashed rgba(21,19,20,.25)}
+.step-cta:hover{color:var(--red)}
 
-/* why / quote */
+/* why */
 .why{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(32px,5vw,90px);align-items:center}
 .why blockquote{font-family:var(--serif);font-size:clamp(34px,3.9vw,58px);line-height:1.04;letter-spacing:-.01em}
-.why blockquote em{color:var(--red);font-style:italic}
-.why cite{display:block;margin-top:24px;font-style:normal}
+.why blockquote em{color:var(--brass);font-style:italic}
+.why cite{display:block;margin-top:24px;font-style:normal;color:var(--muted)}
 .why-pts{list-style:none;border-top:1px solid var(--line)}
 .why-pts li{padding:20px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:28px 1fr;gap:12px;font-size:16px}
 .why-pts li b{display:block;font-weight:600;margin-bottom:2px}
-.why-pts li span.n{font-family:var(--mono);font-size:11px;color:var(--red);padding-top:4px}
-.why-pts li p{color:var(--ink-2);font-size:15px}
+.why-pts li span.n{font-family:var(--mono);font-size:11px;color:var(--brass);padding-top:4px}
+.why-pts li p{color:var(--muted);font-size:15px}
 
-/* work strip */
+/* work */
 .work{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:280px 280px;gap:18px}
-.work figure{position:relative;border-radius:18px;overflow:hidden;background:#ccc}
+.work figure{position:relative;border-radius:18px;overflow:hidden;background:#222}
 .work figure:first-child{grid-row:span 2}
 .work img{width:100%;height:100%;object-fit:cover}
-.work figcaption{position:absolute;left:14px;bottom:14px;background:rgba(255,255,255,.92);font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;border-radius:999px}
+.work figcaption{position:absolute;left:14px;bottom:14px;background:rgba(14,13,12,.78);color:var(--text);font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;border-radius:999px}
 .work-note{margin-top:16px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
 
-/* CTA band */
+/* instagram */
+.ig-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:36px}
+.ig-handle{display:flex;align-items:center;gap:16px}
+.ig-handle .av{width:64px;height:64px;border-radius:50%;background:#111;border:1px solid rgba(205,166,114,.5);display:grid;place-items:center;overflow:hidden}
+.ig-handle .av img{width:44px}
+.ig-handle b{display:block;font-size:20px;font-weight:600}
+.ig-handle span{color:var(--muted);font-size:14px}
+.ig-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.ig-grid a{position:relative;display:block;aspect-ratio:4/5;border-radius:10px;overflow:hidden;background:#222}
+.ig-grid img{width:100%;height:100%;object-fit:cover;transition:transform .5s,opacity .3s}
+.ig-grid a:hover img{transform:scale(1.05);opacity:.85}
+.ig-grid a span{position:absolute;left:8px;bottom:8px;font-family:var(--mono);font-size:10px;letter-spacing:.08em;background:rgba(14,13,12,.75);color:#E8E1D7;padding:4px 7px;border-radius:999px}
+.ig-foot{margin-top:16px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:13px}
+
+/* band */
 .band{margin-top:clamp(80px,10vw,150px)}
 .band-inner{background:var(--red);color:#fff;border-radius:26px;padding:clamp(40px,6vw,88px);display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:40px;align-items:end;position:relative;overflow:hidden}
-.band-inner::before{content:"";position:absolute;right:-70px;bottom:-150px;width:420px;height:420px;border:72px solid rgba(255,255,255,.07);border-right-color:transparent;border-radius:10px;pointer-events:none}
 .band h2{font-size:clamp(44px,6vw,92px)}
-.band h2 em{color:#ffd6d6}
+.band h2 em{color:#ffd9c2}
 .band p{font-size:18px;opacity:.92;margin-top:18px;max-width:30em}
 .band .acts{display:flex;flex-direction:column;gap:12px;align-items:flex-start;position:relative}
-.band .btn-light{background:#fff;color:var(--ink)}
-.band .btn-light:hover{background:var(--ink);color:#fff}
+.band .btn-light{background:#fff;color:#151314}
+.band .btn-light:hover{background:#151314;color:#fff}
 .band .btn-line{border:1px solid rgba(255,255,255,.7);color:#fff}
-.band .btn-line:hover{background:rgba(255,255,255,.12)}
 
 /* contact */
 .contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(32px,5vw,80px)}
-.c-info dl{border-top:1px solid var(--ink);margin-top:30px}
+.c-info dl{border-top:1px solid rgba(242,237,230,.6);margin-top:30px}
 .c-info dl>div{display:grid;grid-template-columns:120px 1fr;padding:18px 0;border-bottom:1px solid var(--line);gap:10px}
-.c-info dt{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);padding-top:3px}
+.c-info dt{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);padding-top:3px}
 .c-info dd{font-size:17px}
 .c-info dd a{border-bottom:1px solid var(--line)}
-.map{margin-top:22px;border-radius:16px;border:1px solid var(--line);background:var(--paper-2);height:200px;position:relative;overflow:hidden}
+.map{margin-top:22px;border-radius:16px;border:1px solid var(--line);background:var(--bg-2);height:200px;position:relative;overflow:hidden}
 .map svg{position:absolute;inset:0;width:100%;height:100%}
-.map .pin{position:absolute;left:58%;top:44%;transform:translate(-50%,-100%);background:var(--ink);color:#fff;font-size:12px;padding:6px 10px;border-radius:8px;white-space:nowrap}
-.map .pin::after{content:"";position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);border:6px solid transparent;border-top-color:var(--ink);border-bottom:0}
-.map .mono{position:absolute;right:12px;bottom:10px;font-size:10px;color:var(--ink-2)}
-form.quote{background:#fff;border:1px solid var(--line);border-radius:22px;padding:clamp(24px,3.4vw,44px)}
+.map .pin{position:absolute;left:58%;top:44%;transform:translate(-50%,-100%);background:var(--text);color:var(--bg);font-size:12px;padding:6px 10px;border-radius:8px;white-space:nowrap}
+.map .pin::after{content:"";position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);border:6px solid transparent;border-top-color:var(--text);border-bottom:0}
+.map .mono{position:absolute;right:12px;bottom:10px;font-size:10px;color:var(--muted)}
+form.quote{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:clamp(24px,3.4vw,44px)}
 form.quote h3{font-size:40px;margin-bottom:6px}
-form.quote>p{color:var(--ink-2);margin-bottom:24px}
+form.quote>p{color:var(--muted);margin-bottom:24px}
 .f-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .f-grid .full{grid-column:1/-1}
-label.f{display:flex;flex-direction:column;gap:7px;font-size:13px;font-weight:600}
-label.f input,label.f select,label.f textarea{font:inherit;font-weight:400;font-size:16px;border:1px solid var(--line);border-radius:12px;padding:13px 14px;background:var(--paper);color:var(--ink);width:100%}
+label.f{display:flex;flex-direction:column;gap:7px;font-size:13px;font-weight:600;color:#DDD6CC}
+label.f input,label.f select,label.f textarea{font:inherit;font-weight:400;font-size:16px;border:1px solid var(--line);border-radius:12px;padding:13px 14px;background:var(--bg);color:var(--text);width:100%}
 label.f textarea{min-height:110px;resize:vertical}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
-.chips span{border:1px solid var(--line);border-radius:999px;padding:7px 13px;font-size:14px;background:var(--paper)}
-.chips span.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.chips span{border:1px solid var(--line);border-radius:999px;padding:7px 13px;font-size:14px;color:#DDD6CC}
+.chips span.on{background:var(--brass);color:#151314;border-color:var(--brass)}
 .f-foot{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:22px;flex-wrap:wrap}
-.f-foot small{color:var(--ink-2);font-size:12.5px;max-width:24em}
+.f-foot small{color:var(--muted);font-size:12.5px;max-width:24em}
 
-/* footer */
-footer{margin-top:clamp(80px,10vw,150px);background:var(--dark);color:#D9D4D0;padding:clamp(56px,6vw,90px) 0 90px;overflow:hidden}
-.f-top{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:32px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.14)}
-.f-top h4{font-family:var(--mono);font-weight:500;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#9E9697;margin-bottom:14px}
+footer{margin-top:clamp(80px,10vw,150px);background:#080707;border-top:1px solid var(--line);color:#D9D4D0;padding:clamp(56px,6vw,90px) 0 90px;overflow:hidden}
+.f-top{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:32px;padding-bottom:48px;border-bottom:1px solid var(--line)}
+.f-top h4{font-family:var(--mono);font-weight:500;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);margin-bottom:14px}
 .f-top p,.f-top li{font-size:15px;line-height:1.7;list-style:none}
 .wordmark{font-family:var(--sans);font-weight:800;letter-spacing:-.045em;font-size:min(calc((100vw - 2*var(--pad)) / 8.9),146px);line-height:.85;color:#fff;margin-top:48px;white-space:nowrap}
 .wordmark span{color:var(--red)}
 .f-bot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:28px;font-size:12.5px;color:#9E9697}
 
 @media (max-width:1180px){
-  .nav{display:none}
-  .menu-btn{display:inline-flex}
-  .hdr-phone{margin-left:auto}
-  .options{grid-template-columns:repeat(2,1fr)}
-  .options>div+div{border-left:0}
-  .options>div{border-bottom:1px solid var(--line)}
-  .options .intro{grid-column:1/-1}
+  .nav{display:none}.menu-btn{display:inline-flex}.hdr-phone{margin-left:auto}
+  .options{grid-template-columns:repeat(2,1fr)}.options>div+div{border-left:0}.options>div{border-bottom:1px solid var(--line)}.options .intro{grid-column:1/-1}
+  .ig-grid{grid-template-columns:repeat(3,1fr)}
 }
 @media (max-width:980px){
   .hero-grid,.sec-head,.svc,.why,.contact,.band-inner{grid-template-columns:1fr}
-  .hero-media{min-height:520px}
+  .hero-media{min-height:560px}
   .cats{grid-template-columns:repeat(2,1fr)}
   .proof ul{grid-template-columns:repeat(2,1fr)}
   .proof li:nth-child(3){padding-left:0;border-left:0}
   .proof li:nth-child(n+3){border-top:1px solid var(--line)}
-  .steps{grid-template-columns:1fr}
-  .step .ph{aspect-ratio:16/9}
-  .svc-img{position:relative;top:0}
-  .svc-img img{aspect-ratio:16/10}
+  .feature{grid-template-columns:1fr 1fr}.feature .story{grid-column:1/-1}
+  .steps{grid-template-columns:1fr}.step .ph{aspect-ratio:16/9}
+  .svc-img{position:relative;top:0}.svc-img img{aspect-ratio:16/10}
   .work{grid-template-columns:1fr 1fr;grid-template-rows:300px 200px 200px}
   .work figure:first-child{grid-column:1/-1;grid-row:auto}
   .f-top{grid-template-columns:1fr 1fr}
@@ -235,44 +253,35 @@ footer{margin-top:clamp(80px,10vw,150px);background:var(--dark);color:#D9D4D0;pa
 @media (max-width:640px){
   body{font-size:16px}
   .hdr .wrap{height:66px;gap:10px}
-  .brand img{height:34px}
-  .brand span{font-size:12.5px;letter-spacing:.16em}
-  .brand span small{font-size:9px}
+  .brand img{height:34px}.brand span{font-size:12.5px;letter-spacing:.16em}.brand span small{font-size:9px}
   .hdr-phone{display:none}
-  .hdr .btn{height:40px;padding:0 14px;font-size:13px;margin-left:auto}
-  .hdr .btn .arr{display:none}
+  .hdr .btn{height:40px;padding:0 14px;font-size:13px;margin-left:auto}.hdr .btn .arr{display:none}
   .hero h1{font-size:clamp(52px,15vw,68px);margin:20px 0 20px}
-  .hero-media{min-height:380px;border-radius:16px}
+  .hero-media{min-height:460px;border-radius:16px}
   .hero-card{display:none}
   .hero-meta{grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
   .cta-row .btn{flex:1 1 100%;justify-content:center}
   .proof ul{grid-template-columns:1fr}
   .proof li,.proof li+li{padding:18px 0;border-left:0}
   .proof li+li{border-top:1px solid var(--line)}
-  .cats{grid-template-columns:1fr 1fr;gap:10px}
-  .cat{border-radius:14px}
-  .cat .lbl{left:12px;right:12px;bottom:12px}
-  .cat h3{font-size:25px}
-  .cat p{display:none}
-  .cat .idx{top:10px;left:10px}
+  .cats{grid-template-columns:1fr 1fr;gap:10px}.cat{border-radius:14px}
+  .cat .lbl{left:12px;right:12px;bottom:12px}.cat h3{font-size:24px}.cat p{display:none}.cat .idx{top:10px;left:10px}
   .options{grid-template-columns:1fr}
-  .svc-item{grid-template-columns:1fr;gap:4px}
-  .svc-item .n{padding-top:0}
+  .feature{grid-template-columns:1fr 1fr;gap:10px}
+  .svc-item{grid-template-columns:1fr;gap:4px}.svc-item .n{padding-top:0}
   .work{grid-template-columns:1fr 1fr;grid-template-rows:240px 150px 150px;gap:10px}
-  .band-inner{border-radius:18px}
-  .band .acts .btn{width:100%;justify-content:center}
+  .ig-grid{grid-template-columns:repeat(2,1fr)}
+  .band-inner{border-radius:18px}.band .acts .btn{width:100%;justify-content:center}
   .c-info dl>div{grid-template-columns:1fr;gap:4px}
   .f-grid{grid-template-columns:1fr}
   .f-top{grid-template-columns:1fr}
   .concept-tag{left:50%;transform:translateX(-50%);bottom:12px;font-size:10px;white-space:nowrap}
 }
-/* mobile menu */
-body.menu-open .menu-panel{display:block;position:fixed;inset:66px 0 0 0;z-index:49;background:var(--paper);padding:28px var(--pad);overflow:auto}
+body.menu-open .menu-panel{display:block;position:fixed;inset:66px 0 0 0;z-index:49;background:var(--bg);padding:28px var(--pad);overflow:auto}
 .menu-panel nav a{display:flex;justify-content:space-between;font-family:var(--serif);font-size:40px;line-height:1.1;padding:12px 0;border-bottom:1px solid var(--line)}
-.menu-panel nav a span{font-family:var(--mono);font-size:11px;color:var(--ink-2);padding-top:14px}
-.menu-panel .m-contact{margin-top:26px;display:grid;gap:8px;font-size:15px;color:var(--ink-2)}
+.menu-panel nav a span{font-family:var(--mono);font-size:11px;color:var(--brass);padding-top:14px}
+.menu-panel .m-contact{margin-top:26px;display:grid;gap:8px;font-size:15px;color:var(--muted)}
 .menu-panel .btn{margin-top:24px;width:100%;justify-content:center}
-/* reveals */
 .js .rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
 .js .rv.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
@@ -288,10 +297,11 @@ body.menu-open .menu-panel{display:block;position:fixed;inset:66px 0 0 0;z-index
       <span>Contempo<small>Spazio</small></span>
     </a>
     <nav class="nav" aria-label="Primary">
-      <a href="#spaces">Kitchens &amp; baths</a>
+      <a href="#spaces">Kitchens &amp; closets</a>
       <a href="#services">Construction</a>
       <a href="#process">Process</a>
       <a href="#work">Projects</a>
+      <a href="#instagram">Instagram</a>
       <a href="#contact">Contact</a>
     </nav>
     <a class="hdr-phone" href="tel:+14075908881">407-590-8881</a>
@@ -301,11 +311,12 @@ body.menu-open .menu-panel{display:block;position:fixed;inset:66px 0 0 0;z-index
 </header>
 <div class="menu-panel" aria-label="Menu">
   <nav>
-    <a href="#spaces">Kitchens &amp; baths <span>01</span></a>
+    <a href="#spaces">Kitchens &amp; closets <span>01</span></a>
     <a href="#services">Construction <span>02</span></a>
     <a href="#process">Process <span>03</span></a>
     <a href="#work">Projects <span>04</span></a>
-    <a href="#contact">Contact <span>05</span></a>
+    <a href="#instagram">Instagram <span>05</span></a>
+    <a href="#contact">Contact <span>06</span></a>
   </nav>
   <div class="m-contact">
     <a href="tel:+14075908881">Tel: 407-590-8881</a>
@@ -317,15 +328,14 @@ body.menu-open .menu-panel{display:block;position:fixed;inset:66px 0 0 0;z-index
 </div>
 
 <main id="top">
-  <!-- HERO -->
   <section class="hero">
     <div class="wrap">
       <div class="hero-grid">
         <div class="hero-copy">
           <div>
             <div class="eyebrow mono">Orlando, FL · Residential &amp; commercial</div>
-            <h1>New construction &amp; remodeling <em>with a modern eye.</em></h1>
-            <p class="lede">Custom kitchens, bathrooms, closets and entertainment centers, designed, fabricated and built by one team. Specialized in high-end residential and commercial solutions, we are here for your project, every step of the way.</p>
+            <h1>New construction &amp; remodeling, <em>designed to transform.</em></h1>
+            <p class="lede">Custom kitchens, closets, vanities and TV accent walls, designed and built around the way you truly want to live. Specialized in high-end residential and commercial solutions, we are here for your project, every step of the way.</p>
             <div class="cta-row">
               <a class="btn btn-primary" href="#contact">Book a design consultation <span class="arr">→</span></a>
               <a class="btn btn-ghost" href="tel:+14075908881">Call 407-590-8881</a>
@@ -334,51 +344,49 @@ body.menu-open .menu-panel{display:block;position:fixed;inset:66px 0 0 0;z-index
           <div class="hero-meta">
             <div><span class="mono">Design</span>Pre-construction, planning &amp; budgeting</div>
             <div><span class="mono">Build</span>Permits, construction &amp; project management</div>
-            <div><span class="mono">Finish</span>Custom cabinetry, counters &amp; install</div>
+            <div><span class="mono">Finish</span>Custom cabinetry, lighting &amp; details</div>
           </div>
         </div>
         <div class="hero-side">
           <div class="hero-media">
-            <img src="assets/hero-kitchen.jpg" alt="Modern dark kitchen with an island and four bar stools">
+            <img src="assets/ig-tvwall-night.jpg" alt="Custom walnut TV accent wall with integrated warm lighting and copper pendants, at night">
             <div class="hero-card">
               <div><span class="mono">Call</span>407-590-8881</div>
               <div><span class="mono">Hours</span>Mon–Fri · 9am–5pm</div>
               <div><span class="mono">Studio</span>10227 General Dr, Orlando</div>
             </div>
           </div>
-          <p class="credit">Image: Contempo Spazio (from contempospazio.com)</p>
+          <p class="credit">Photo: <a href="https://www.instagram.com/p/DVjiWE0mlyY/">@contempospazio on Instagram</a>, Mar 2026</p>
         </div>
       </div>
     </div>
-    <!-- PROOF STRIP -->
     <div class="wrap">
       <div class="proof">
         <ul>
+          <li class="ig"><div><b>6,864</b>Instagram followers · 2,350 posts<small>@contempospazio, as of 2026-11-11</small></div></li>
           <li><span class="n">01</span>Residential &amp; commercial construction</li>
           <li><span class="n">02</span>Design &amp; fabrication by one in-house team</li>
           <li><span class="n">03</span>Permits, inspection &amp; project management handled</li>
-          <li><span class="n">04</span>Modern, minimalist design in solid wood, quartz &amp; granite</li>
         </ul>
       </div>
-      <div class="proof-note"><span class="placeholder">[placeholder: verified Google / Houzz rating + review count]</span><span class="placeholder">[placeholder: years in business / projects completed]</span><span>Add only once the client confirms the figures.</span></div>
+      <div class="proof-note"><span class="placeholder">[placeholder: verified Google / Houzz rating + review count]</span><span class="placeholder">[placeholder: years in business]</span><span class="placeholder">[placeholder: FL contractor licence #]</span><span>Add only once the client confirms them.</span></div>
     </div>
   </section>
 
-  <!-- CATEGORIES -->
   <section class="sec" id="spaces">
     <div class="wrap">
       <div class="sec-head rv">
         <div>
           <div class="eyebrow mono">What we build</div>
-          <h2 style="margin-top:18px">Spaces made <em>to measure.</em></h2>
+          <h2 style="margin-top:18px">Redefining luxury <em>in every detail.</em></h2>
         </div>
-        <p>We specialize in crafting kitchens, bathrooms, closets, bedrooms and any other space you wish to beautify with a touch of luxury and uniqueness.</p>
+        <p>From modern kitchens to dream closets, we craft kitchens, bathrooms, closets, bedrooms and any other space you wish to beautify with a touch of luxury and uniqueness.</p>
       </div>
       <div class="cats rv">
         <a class="cat" href="#contact"><span class="idx">01</span><img src="assets/kitchen-white-island.jpg" alt="White kitchen with a long waterfall island"><div class="lbl"><h3>Kitchens</h3><p>Custom cabinetry, islands, countertops &amp; layouts</p></div></a>
-        <a class="cat" href="#contact"><span class="idx">02</span><img src="assets/bath-floating-vanity.jpg" alt="Bathroom with a dark floating vanity, vessel sink and wall-hung toilet"><div class="lbl"><h3>Bathrooms</h3><p>Vanities, vessel &amp; undermount sinks, storage</p></div></a>
-        <a class="cat" href="#contact"><span class="idx">03</span><img src="assets/closet-walkin.jpg" alt="Walk-in closet with floor-to-ceiling wood shelving"><div class="lbl"><h3>Closets</h3><p>Walk-ins, wardrobes &amp; organisation systems</p></div></a>
-        <a class="cat" href="#contact"><span class="idx">04</span><img src="assets/entertainment-tv-wall.jpg" alt="Dark slatted entertainment wall with a mounted TV"><div class="lbl"><h3>Entertainment centers</h3><p>Media walls, offices &amp; more</p></div></a>
+        <a class="cat" href="#contact"><span class="idx">02</span><img src="assets/closet-walkin.jpg" alt="Walk-in closet with floor-to-ceiling wood shelving"><div class="lbl"><h3>Closets</h3><p>More than storage: a daily luxury</p></div></a>
+        <a class="cat" href="#contact"><span class="idx">03</span><img src="assets/ig-vanity-marble.jpg" style="object-position:28% 50%" alt="Marble floating vanity with backlit wood slat wall and pendant lights"><div class="lbl"><h3>Vanities</h3><p>Vessel, undermount &amp; drop-in, made to measure</p></div></a>
+        <a class="cat" href="#contact"><span class="idx">04</span><img src="assets/ig-tvwall-day-angle.jpg" alt="Walnut TV accent wall with display niches, in daylight"><div class="lbl"><h3>TV accent walls</h3><p>Entertainment centers, offices &amp; more</p></div></a>
       </div>
       <div class="options rv">
         <div class="intro"><p>For those who do not conform to uniformity.</p><a href="#contact">Explore finishes in a consultation →</a></div>
@@ -390,7 +398,28 @@ body.menu-open .menu-panel{display:block;position:fixed;inset:66px 0 0 0;z-index
     </div>
   </section>
 
-  <!-- SERVICES -->
+  <section class="sec" id="featured">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div>
+          <div class="eyebrow mono">Featured project</div>
+          <h2 style="margin-top:18px">One space, <em>day and night.</em></h2>
+        </div>
+        <p>A custom walnut TV accent wall with integrated lighting, shared on our Instagram. The same design, two atmospheres.</p>
+      </div>
+      <div class="feature rv">
+        <figure><img src="assets/ig-tvwall-day.jpg" alt="Walnut TV accent wall with display niches in daylight"><figcaption>Day</figcaption></figure>
+        <figure><img src="assets/ig-tvwall-night.jpg" alt="The same TV accent wall at night with warm integrated lighting"><figcaption>Night</figcaption></figure>
+        <div class="story">
+          <blockquote>“Natural light highlights the architecture during the day, while carefully planned lighting brings <em>warmth, depth, and elegance</em> at night.”</blockquote>
+          <p>Because great design adapts, evolves, and continues to impress, day and night.</p>
+          <a class="iglink" href="https://www.instagram.com/p/DVjiWE0mlyY/">See the post on Instagram →</a>
+        </div>
+      </div>
+      <p class="credit">Photos and caption: @contempospazio on Instagram, post of Mar 6, 2026. <span class="placeholder">[placeholder: project location &amp; scope]</span></p>
+    </div>
+  </section>
+
   <section class="sec" id="services">
     <div class="wrap">
       <div class="sec-head rv">
@@ -403,7 +432,7 @@ body.menu-open .menu-panel{display:block;position:fixed;inset:66px 0 0 0;z-index
       <div class="svc">
         <div class="svc-img rv"><img src="assets/exterior-lanai.jpg" alt="Covered lanai with a wooden swing overlooking a lake"></div>
         <div class="svc-list">
-          <div class="svc-item rv"><span class="n">01</span><div><h3>Pre-construction</h3><p>Get clarity before anything is built: scope, design and a realistic budget.</p><div class="tags"><span>Pre-construction consultancy</span><span>Design &amp; planning</span><span>Budgeting</span></div></div></div>
+          <div class="svc-item rv"><span class="n">01</span><div><h3>Pre-construction</h3><p>Start with a clear vision and define your budget before anything is built.</p><div class="tags"><span>Pre-construction consultancy</span><span>Design &amp; planning</span><span>Budgeting</span></div></div></div>
           <div class="svc-item rv"><span class="n">02</span><div><h3>New construction</h3><p>Residential and commercial builds managed end to end, permits to inspection.</p><div class="tags"><span>Permits</span><span>Site preparation</span><span>Construction</span><span>Project management</span><span>Inspection</span></div></div></div>
           <div class="svc-item rv"><span class="n">03</span><div><h3>Remodeling</h3><p>Upgrade what you have, inside and out, or add the space you need.</p><div class="tags"><span>Interior renovations</span><span>Exterior updates</span><span>Room additions</span><span>Space enhancements</span></div></div></div>
         </div>
@@ -411,25 +440,24 @@ body.menu-open .menu-panel{display:block;position:fixed;inset:66px 0 0 0;z-index
     </div>
   </section>
 
-  <!-- PROCESS -->
   <section class="process" id="process">
     <div class="wrap">
       <div class="sec-head rv">
         <div>
           <div class="eyebrow mono">How it works</div>
-          <h2 style="margin-top:18px">One team, <em>start to finish.</em></h2>
+          <h2 style="margin-top:18px">Behind every result, <em>a full process.</em></h2>
         </div>
-        <p>Our highly skilled designers and expert craftsmen work closely with each client to capture their vision and turn it into a stunning reality.</p>
+        <p>Yes, we create beautiful spaces. But behind every final result, there’s a full process of planning, design, precision, and execution.</p>
       </div>
       <div class="steps">
-        <div class="step rv"><span class="num">01 / 03</span><div class="ph"><img src="assets/design-sketch.jpg" alt="Line drawing of a kitchen design"></div><h3>Consult &amp; design</h3><p>We listen, measure and plan your layout, finishes and budget, with a personalised design that reflects how you live or work.</p><a class="step-cta" href="#contact">Book a consultation →</a></div>
-        <div class="step rv"><span class="num">02 / 03</span><div class="ph"><img src="assets/kitchen-dark.jpg" alt="Completed dark kitchen with two islands"></div><h3>Fabricate &amp; build</h3><p>Cabinetry is crafted to your specification while we handle permits, site preparation and construction.</p><a class="step-cta" href="#contact">Book a consultation →</a></div>
-        <div class="step rv"><span class="num">03 / 03</span><div class="ph"><img src="assets/install-crew.jpg" alt="Two installers fitting a built-in wardrobe"></div><h3>Install &amp; inspect</h3><p>Our team installs, inspects and manages the project through to completion, and beyond.</p><a class="step-cta" href="#contact">Book a consultation →</a></div>
+        <div class="step rv"><span class="num">01 / 03</span><div class="ph"><img src="assets/ig-floorplan.jpg" alt="Floor plan drawing of a kitchen and dining layout"></div><h3>Plan &amp; design</h3><p>We define your vision, layout, finishes and budget, with a personalised design built around how you live or work.</p><a class="step-cta" href="#contact">Book a consultation →</a></div>
+        <div class="step rv"><span class="num">02 / 03</span><div class="ph"><img src="assets/ig-kitchen-in-progress.jpg" alt="Kitchen under construction with cabinet boxes installed"></div><h3>Build with precision</h3><p>Cabinetry is crafted to your specification while we handle permits, site preparation and construction.</p><a class="step-cta" href="#contact">Book a consultation →</a></div>
+        <div class="step rv"><span class="num">03 / 03</span><div class="ph"><img src="assets/ig-kitchen-ovens.jpg" alt="Finished kitchen with white and dark cabinetry and brass pulls"></div><h3>Reveal &amp; inspect</h3><p>Our team installs, inspects and manages the project through to completion, and beyond.</p><a class="step-cta" href="#contact">Book a consultation →</a></div>
       </div>
+      <p class="credit" style="color:#5C5657">Step photos: @contempospazio on Instagram (posts of Jul 1 &amp; Jul 7, 2026).</p>
     </div>
   </section>
 
-  <!-- WHY -->
   <section class="sec">
     <div class="wrap why">
       <div class="rv">
@@ -440,41 +468,63 @@ body.menu-open .menu-panel{display:block;position:fixed;inset:66px 0 0 0;z-index
       <ul class="why-pts rv">
         <li><span class="n">01</span><div><b>Bespoke, not off-the-shelf</b><p>Colours, materials and endless possible combinations, tailored to your lifestyle and preferences.</p></div></li>
         <li><span class="n">02</span><div><b>Designers and makers in-house</b><p>Creation, design and fabrication by one team of designers, manufacturers and professionals.</p></div></li>
-        <li><span class="n">03</span><div><b>Modern, minimalist approach</b><p>Contemporary elegance where luxury, uniqueness and functionality converge.</p></div></li>
+        <li><span class="n">03</span><div><b>Lighting as part of the design</b><p>Integrated lighting in walls, closets and cabinetry that brings warmth, depth and elegance.</p></div></li>
         <li><span class="n">04</span><div><b>Homes and businesses</b><p>From master suites to a physician’s office reception desk.</p></div></li>
       </ul>
     </div>
   </section>
 
-  <!-- WORK -->
   <section class="sec" id="work">
     <div class="wrap">
       <div class="sec-head rv">
         <div>
           <div class="eyebrow mono">Selected work</div>
-          <h2 style="margin-top:18px">Recent <em>spaces.</em></h2>
+          <h2 style="margin-top:18px">Where comfort <em>meets elegance.</em></h2>
         </div>
-        <p>A few of the kitchens, baths and living spaces from our project pages. The full rebuild would turn each into a project story with its specs.</p>
+        <p>Kitchens, vanities, closets and built-ins from our Instagram and project pages. The full rebuild would turn each into a project story with its specs.</p>
       </div>
       <div class="work rv">
-        <figure><img src="assets/kitchen-wood-wall.jpg" alt="White island kitchen with a full-height wood cabinet wall"><figcaption>Kitchen</figcaption></figure>
-        <figure><img src="assets/bath-double-vanity.jpg" alt="Double vanity with two vessel sinks"><figcaption>Bathroom</figcaption></figure>
+        <figure><img src="assets/kitchen-dark.jpg" alt="Completed dark kitchen with two islands"><figcaption>Kitchen</figcaption></figure>
+        <figure><img src="assets/ig-kitchen-finished.jpg" alt="Dark modern kitchen with wall ovens and warm under-cabinet lighting"><figcaption>Kitchen · Instagram</figcaption></figure>
         <figure><img src="assets/closet-white-wardrobe.jpg" alt="Built-in white wardrobe wall with drawers"><figcaption>Closet</figcaption></figure>
         <figure><img src="assets/office-niche.jpg" alt="Built-in home office desk niche"><figcaption>Office &amp; more</figcaption></figure>
         <figure><img src="assets/kitchen-dark-2.jpg" alt="Black kitchen with granite island"><figcaption>Kitchen</figcaption></figure>
       </div>
-      <div class="work-note"><span class="placeholder">[placeholder: project names, locations &amp; client quotes — with the client’s permission]</span><a class="btn btn-ghost" href="#contact">Start your project <span class="arr">→</span></a></div>
+      <div class="work-note"><span class="placeholder">[placeholder: project names, locations &amp; client quotes, with the client’s permission]</span><a class="btn btn-ghost" href="#contact">Start your project <span class="arr">→</span></a></div>
     </div>
   </section>
 
-  <!-- CTA BAND -->
+  <section class="sec" id="instagram">
+    <div class="wrap">
+      <div class="ig-head rv">
+        <div>
+          <div class="eyebrow mono">Recent work on Instagram</div>
+          <h2 style="margin-top:18px">Inside the house, <em>every detail speaks.</em></h2>
+        </div>
+        <a class="ig-handle" href="https://www.instagram.com/contempospazio/">
+          <span class="av"><img src="assets/logo-mark.png" alt=""></span>
+          <span><b>@contempospazio</b><span>6,864 followers · 2,350 posts (as of 2026-11-11)</span></span>
+        </a>
+      </div>
+      <div class="ig-grid rv">
+        <a href="https://www.instagram.com/p/DadgXJ0BF8l/"><img src="assets/ig-post-DadgXJ0BF8l.jpg" alt="Instagram post: Inside the house, bathroom with brass fixtures"><span>Jul 9, 2026</span></a>
+        <a href="https://www.instagram.com/p/Dadf9hXM0pK/"><img src="assets/ig-post-Dadf9hXM0pK.jpg" alt="Instagram post: living room with marble fireplace wall"><span>Jul 6, 2026</span></a>
+        <a href="https://www.instagram.com/p/DaVNd3Kx2Si/"><img src="assets/ig-post-DaVNd3Kx2Si.jpg" alt="Instagram post: key closet features"><span>Jul 3, 2026</span></a>
+        <a href="https://www.instagram.com/p/DaNp04xxjdm/"><img src="assets/ig-post-DaNp04xxjdm.jpg" alt="Instagram post: Ready to renovate? kitchen"><span>Jul 1, 2026</span></a>
+        <a href="https://www.instagram.com/p/DVjiWE0mlyY/"><img src="assets/ig-post-DVjiWE0mlyY.jpg" alt="Instagram post: TV accent wall, day to night"><span>Mar 6, 2026</span></a>
+        <a href="https://www.instagram.com/p/DPCWxeBEZ_q/"><img src="assets/ig-post-DPCWxeBEZ_q.jpg" alt="Instagram post: About us collage of projects"><span>Sep 25, 2025</span></a>
+      </div>
+      <div class="ig-foot"><span>Static preview of public posts. Each tile links to the original post.</span><a class="btn btn-ghost" href="https://www.instagram.com/contempospazio/" style="height:44px">Follow @contempospazio <span class="arr">→</span></a></div>
+    </div>
+  </section>
+
   <section class="band">
     <div class="wrap">
       <div class="band-inner rv">
         <div>
-          <div class="mono" style="opacity:.85">Let’s embark on it together</div>
-          <h2 style="margin-top:16px">Your space, <em>reimagined.</em></h2>
-          <p>Tell us about your kitchen, bath, closet or build. We’ll set up a consultation to talk through design, budget and timing.</p>
+          <div class="mono" style="opacity:.85">Ready to renovate?</div>
+          <h2 style="margin-top:16px">Create the space <em>you’ve always imagined.</em></h2>
+          <p>Start with a clear vision, define your budget, and let the right team bring your plans to life.</p>
         </div>
         <div class="acts">
           <a class="btn btn-light" href="#contact">Book a design consultation <span class="arr">→</span></a>
@@ -484,7 +534,6 @@ body.menu-open .menu-panel{display:block;position:fixed;inset:66px 0 0 0;z-index
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section class="sec" id="contact">
     <div class="wrap contact">
       <div class="c-info rv">
@@ -495,13 +544,14 @@ body.menu-open .menu-panel{display:block;position:fixed;inset:66px 0 0 0;z-index
           <div><dt>Email</dt><dd><a href="mailto:contempospazio@gmail.com">contempospazio@gmail.com</a></dd></div>
           <div><dt>Address</dt><dd>10227 General Drive<br>Orlando, FL 32824</dd></div>
           <div><dt>Hours</dt><dd>Mon – Fri: 9am – 5pm<br>Saturday &amp; Sunday: Closed</dd></div>
+          <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/contempospazio/">@contempospazio</a></dd></div>
         </dl>
         <div class="map" aria-label="Illustrative map">
           <svg viewBox="0 0 600 200" preserveAspectRatio="none" aria-hidden="true">
-            <g stroke="#C9C2BD" stroke-width="1.2" fill="none">
+            <g stroke="#3A3530" stroke-width="1.2" fill="none">
               <path d="M0 60 H600"/><path d="M0 130 C150 120 300 150 600 140"/><path d="M90 0 V200"/><path d="M250 0 C260 70 240 140 270 200"/><path d="M420 0 V200"/><path d="M520 0 C500 80 540 140 520 200"/>
             </g>
-            <path d="M0 95 C120 90 220 110 350 92 S520 70 600 84" stroke="#978F90" stroke-width="5" fill="none"/>
+            <path d="M0 95 C120 90 220 110 350 92 S520 70 600 84" stroke="#CDA672" stroke-opacity=".6" stroke-width="5" fill="none"/>
           </svg>
           <div class="pin">Contempo Spazio · 10227 General Dr</div>
           <span class="mono">Illustrative map</span>
@@ -515,7 +565,7 @@ body.menu-open .menu-panel{display:block;position:fixed;inset:66px 0 0 0;z-index
           <label class="f">Phone<input type="tel" placeholder="(407) 000-0000"></label>
           <label class="f full">Email<input type="email" placeholder="you@email.com"></label>
           <div class="full"><label class="f" style="margin-bottom:8px">Project type</label>
-            <div class="chips"><span class="on">Kitchen</span><span>Bathroom</span><span>Closet</span><span>Entertainment center</span><span>Remodel</span><span>New construction</span><span>Commercial</span></div></div>
+            <div class="chips"><span class="on">Kitchen</span><span>Closet</span><span>Vanity / bath</span><span>TV accent wall</span><span>Remodel</span><span>New construction</span><span>Commercial</span></div></div>
           <label class="f">Property<select><option>Home</option><option>Business</option></select></label>
           <label class="f">Timing<select><option>As soon as possible</option><option>1–3 months</option><option>3–6 months</option><option>Just exploring</option></select></label>
           <label class="f full">Tell us about the project<textarea placeholder="Room, size, style ideas, photos you like…"></textarea></label>
@@ -532,13 +582,13 @@ body.menu-open .menu-panel{display:block;position:fixed;inset:66px 0 0 0;z-index
 <footer>
   <div class="wrap">
     <div class="f-top">
-      <div><h4>Contempo Spazio</h4><p>New construction &amp; remodeling. Residential and commercial construction in Orlando, FL.</p></div>
+      <div><h4>Contempo Spazio</h4><p>Design that transforms spaces. New construction &amp; remodeling, residential and commercial, in Orlando, FL.</p></div>
       <div><h4>Contact</h4><ul><li><a href="tel:+14075908881">407-590-8881</a></li><li><a href="mailto:contempospazio@gmail.com">contempospazio@gmail.com</a></li><li>10227 General Drive, Orlando, FL 32824</li></ul></div>
       <div><h4>Hours</h4><ul><li>Mon – Fri: 9am – 5pm</li><li>Saturday: Closed</li><li>Sunday: Closed</li></ul></div>
       <div><h4>Follow</h4><ul><li><a href="https://www.instagram.com/contempospazio/">Instagram</a></li><li><a href="https://www.facebook.com/contempospazio/">Facebook</a></li><li><a href="https://www.pinterest.com/contempospazio/">Pinterest</a></li><li><a href="http://www.houzz.com/pro/contempospazio/contempo-spazio">Houzz</a></li></ul></div>
     </div>
     <div class="wordmark">Contempo<span>.</span>Spazio</div>
-    <div class="f-bot"><span>Concept redesign – not the live site. Internal mockup, not affiliated with or approved by Contempo Spazio.</span><span>Photos: Contempo Spazio’s own project images from contempospazio.com (see credits.md).</span></div>
+    <div class="f-bot"><span>Concept redesign – not the live site. Unofficial mockup, not affiliated with or approved by Contempo Spazio.</span><span>Photos: Contempo Spazio’s own images from contempospazio.com and @contempospazio on Instagram.</span></div>
   </div>
 </footer>
 <script>
